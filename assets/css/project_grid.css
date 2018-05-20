@@ -1,0 +1,129 @@
+.square {
+    float:left;
+    position: relative;
+    width: 20%;
+    padding-bottom: 30%;
+    margin: 0.66%;
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-size:contain; /* you change this to "contain" if you don't want the images to be cropped */
+}
+
+.slide-1{background-image:url('../../images/slide/5(3).jpg');}
+.turbo-1{background-image:url('../../images/turbo/001_0063.jpg');}
+.loop-1{background-image:url('../../images/loop/f14.jpg');}
+
+.flash-1{background-image:url('../../images/flash/001_0449.jpg');}
+.stroke-1{background-image:url('../../images/stroke/001_0146.jpg');}
+.kirigami-1{background-image:url('../../images/kirigami/001_9808.jpg');}
+
+.lbd-1{background-image:url('../../images/lbd/IMG_7514.jpg');}
+.leather-1{background-image:url('../../images/leather/1.jpg');}
+.wagashi-1{background-image:url('../../images/wagashi/IMG_4145.jpg');}
+/*.img_2-3{background-image:url('https://farm4.staticflickr.com/3165/5733278274_2626612c70.jpg');}
+
+.img_3-1{background-image:url('https://farm9.staticflickr.com/8429/7862595906_8f953fd25b.jpg');}
+.img_3-2{background-image:url('https://farm7.staticflickr.com/6083/6055581292_d94c2d90e3.jpg');}
+.img_3-3{background-image:url('https://farm4.staticflickr.com/3771/13199704015_72aa535bd7.jpg');}*/
+
+/*  <div><a href="generic.html"><span class="image fit"><img src="images/5_3.jpg"/></span></a></div>
+  <div><a href="generic.html"><span class="image fit"><img src="images/3.jpg"/></span></a></div>
+  <div><a href="generic.html"><span class="image fit"><img src="images/2.jpg"/></span></a></div><br>
+  <div><a href="generic.html"><span class="image fit"><img src="images/4.jpg"></span></a></div>
+  <div><a href="generic.html"><span class="image fit"><img src="images/1.jpg"/></span></a></div> -->*/
+
+  #galleryWrapper {
+
+    width: 80%;
+    margin-left: 10%;
+text-align: center;
+position: relative;
+
+
+  }
+
+  .column {
+    float: left;
+    width: 33.33%;
+    height: 600px;
+  /*  border: 1px solid black;*/
+    text-align: center;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.galleryLink {
+  width: 350px;
+  height: 484.5px;
+  /*border: 1px solid black;*/
+  text-align: center;
+}
+
+.captionHeader {
+  height: 15px;
+  width: 350px;
+  /*border: 1px solid;*/
+}
+
+a.captionLink {
+  color: black;
+  text-decoration: none;
+
+}
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+
+    #galleryWrapper{
+          width: 100%;
+    margin-left: 0;
+
+    }
+
+    .galleryLink{
+          width: 280px;
+    height: 450.5px;
+    }
+
+    .square {
+    margin: 2.66%;
+    float: none;
+  }
+
+  .captionHeader {
+    width: 290px;
+}
+
+}
+
+@media only screen and (min-width : 600px) and (max-width : 1200px) {
+    .column {
+        width: 100%;
+    }
+
+    #galleryWrapper{
+     width: 80%;
+    margin-left: 8em;
+
+    }
+
+    .galleryLink{
+          width: 280px;
+    height: 450.5px;
+    }
+
+    .square {
+    margin: 2.66%;
+    float: none;
+  }
+
+  .captionHeader {
+    width: 290px;
+}
+}
